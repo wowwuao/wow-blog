@@ -1,0 +1,12 @@
+/* 方法二 flex布局
+父 display:flex; 右 flex：1
+*/
+.container{
+    display: flex;
+}
+.left{
+    width: 100px;
+}
+.right{
+    flex: 1;
+}

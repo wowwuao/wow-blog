@@ -1,0 +1,82 @@
+.slide-list{
+    margin: 0 auto;
+    height: 150px;
+    max-width: 375px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+    .slide-list-item{
+      background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+      margin: 3px;
+      padding: 3px;
+      border: 1px solid #a18cd1;
+      border-radius: 5px;
+      display: flex;
+      background-color: white;
+      font-size: 8px;
+      min-width: 110px;
+      max-width: 150px;
+      height: 50px;
+      overflow: hidden;
+      .slide-list-item-avatar{
+        width: 40px;
+        height: 40px;
+        .slide-list-item-avatar-img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .slide-list-item-info{
+        flex:1;
+        .slide-list-item-info-head{
+          height: 15px;
+          position: relative;
+          transform: scale(0.75);
+          .slide-list-item-info-username{
+            left: 5px;
+            position: absolute;
+          }
+          .slide-list-item-info-likes{
+            position: absolute;
+            right: 5px;
+          }
+        }
+        .slide-list-item-info-content{
+          height: 28px;
+          position: relative;
+          bottom: 2px;
+          line-height: 14px;
+          transform: scale(0.8);
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  .list-item-model{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 325px;
+    height: 400px;
+    padding: 10px;
+    background-color: gainsboro;
+    z-index: 1;
+    border: #a18cd1 1px solid;
+    box-shadow: 0 0 3px 5px #a18cd1 ;
+    border-radius: 5px;
+    .list-item-model-close{
+      position: absolute;
+      right: 5px;
+    }
+  }

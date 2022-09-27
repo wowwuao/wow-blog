@@ -1,0 +1,13 @@
+/* 方法一
+左：float:left;*/
+.container{}
+.left{
+    float: left;
+    width: 100px;
+}
+.right{
+    /* 防止内容因宽度过小而换行 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}

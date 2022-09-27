@@ -1,0 +1,12 @@
+/* 方法三 grid布局
+父: display: grid;
+    grid-template-columns: 100px 1fr;
+*/
+.container{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.left{
+}
+.right{
+}

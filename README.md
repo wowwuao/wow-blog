@@ -1,2 +1,33 @@
-# wow-blog
-[wow的blog](https://wowwuao.github.io/wow-blog/#/)
+# blog
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ npm i
+```
+
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Run test,
+
+```bash
+$ npm test
+```
+
+Build library via `father`,
+
+```bash
+$ npm run build
+```

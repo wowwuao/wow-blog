@@ -1,0 +1,50 @@
+//4.CSS选择器.md
+.css4-ul {
+  li:nth-child(1){
+    font-size: 30px;
+  }
+  li:nth-child(3){
+    background-color: coral;
+  }
+}
+
+//5.浮动和清除浮动
+//高度塌陷
+.father{
+  background-color: red;
+  //方式1：给父元素单独设置高度，不能响应式布局
+  // height: 80px;
+  
+  //方式2：设置overflow，可以针对 IE6 兼容
+  // overflow: hidden;
+  // zoom: 1;
+
+  //方式3：overflow定义auto，可能会出现滚动条
+  //overflow: auto;
+
+  //方式4：父级伪元素万能清除法
+  // &::after{
+  //   content: "";
+  //   clear: both;
+  //   display: block;
+  //   height: 0;
+  //   overflow: hidden;
+  //   visibility: hidden;
+  // }
+  .box{
+    height: 100px;
+    width: 100px;
+    float: left;
+    background-color: rgb(220, 206, 188);
+
+  }
+  .son1{
+    background-color: rgb(220, 206, 188);
+  }
+  .son2{
+    background-color: rgb(159, 220, 101);
+  }
+  .son3{
+    background-color: rgb(212, 141, 47);
+  }
+}
