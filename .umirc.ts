@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'wow-blog',
   favicon:'https://p26-passport.byteacctimg.com/img/user-avatar/1e1b1258b43b135af6a1c7b591ab95b5~300x300.image',
   logo: 'https://p26-passport.byteacctimg.com/img/user-avatar/1e1b1258b43b135af6a1c7b591ab95b5~300x300.image',
-  outputPath: 'dist',
+  outputPath: './',
   mode: 'site',
   // more config: https://d.umijs.org/config
   history:{
